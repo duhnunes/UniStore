@@ -1,86 +1,98 @@
-<h1 align="center">UniStore</h1>
-
 <p align="center">
-  **UniStore** é um projeto FullStack com o intuito de criar um pequeno e minimalista e-commerce direto. Nele cada usuário pode criar sua conta e cadastrar produtos para exibí-los na página principal.
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/build-WIP-yellow?style=flat" />
-  <a href="https://choosealicense.com/licenses/mit/" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/license-MIT-green?style=flat" />
-  </a>
-  <img src="https://img.shields.io/badge/NextJS-black?style=flat" />
-  <img src="https://img.shields.io/badge/NestJS-red?style=flat" />
-  <img src="https://img.shields.io/badge/Docker-blue?style=flat" />
+[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
+[circleci-url]: https://circleci.com/gh/nestjs/nest
+
+  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
+    <p align="center">
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
+<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
+<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
+<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
+<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
+  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
+    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
+  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
 </p>
+  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
+  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-<p align="center">
- <a href="#objective">Objective</a> •
- <a href="#features">Features</a> • 
- <a href="#instalation">Instalation</a> • 
- <a href="#demonstration">Demonstration</a> • 
- <a href="#technology">Technology</a> • 
- <a href="#autor">Autor</a>
-</p>
+## Description
 
-## 🎯 Objective
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-O objetivo é estudar a framework NestJS e aprimorar minhas skills en NextJS.
+## Project setup
 
-## Features
-- CRUD de usuário
-- Produtos dos usuários
-- Exibição dos usuários e seus produtos na página inicial
-- Authentication de usuários
+```bash
+$ pnpm install
+```
 
-## ⚒️ Instalation
+## Compile and run the project
 
-- Clone repository:
-  - Using GH: `gh repo clone duhnunes/UniStore`
-  - Using GIT: `git clone https://github.com/duhnunes/UniStore.git`
-- Open in VSCode:
-  - Type `code UniStore`
-    - or Go to folder `cd UniStore` and type `code .`
-  - Create Docker: `docker-compose up -d`
-  - Start Frontend in terminal: `pnpm run dev`
-  - Start Backend in terminal: `pnpm run start:dev`
-- Open in Browser: `http://localhost:3000`
+```bash
+# development
+$ pnpm run start
 
-## 📺 Demonstration
+# watch mode
+$ pnpm run start:dev
 
-### 1920x1080
+# production mode
+$ pnpm run start:prod
+```
 
-<p align="center">
-  <img src="./.github/imgs/demo.gif" alt="demo gif" />
-  <img src="./.github/imgs/demo.jpeg" alt="demo screenshot" />
-</p>
+## Run tests
 
-### 390p (Samsung Galaxy S20)
+```bash
+# unit tests
+$ pnpm run test
 
-<p align="center">
-  <img src="./.github/imgs/demo360.gif" alt="demo 360 gif" />
-  <img src="./.github/imgs/demo360.jpeg" alt="demo 360 screenshot" />
-</p>
+# e2e tests
+$ pnpm run test:e2e
 
-## 💻 Technology
+# test coverage
+$ pnpm run test:cov
+```
 
-- NextJS
-- TailwindCss
-- NestJS
-- Fastify
+## Deployment
 
-## 🧔 Author
+When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
 
-<p align="center">
-  <img style="border-radius: 50%;" src="https://github.com/duhnunes.png" width="100px" alt="duhnunes.png" />
-</p>
+If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
 
-<p align="center">
+```bash
+$ pnpm install -g mau
+$ mau deploy
+```
 
-[![Email Badge](https://img.shields.io/badge/-duhnunes.dev@gmail.com-D14836?style=flat-square&labelColor=D14836&logo=gmail&logoColor=white&link=mailto:duhnunes.dev@gmail.com)](mailto:duhnunes.dev@gmail.com)
-[![Linkedin Badge](https://img.shields.io/badge/-duhnunes-0077B5?style=flat-square&labelColor=0077B5&logo=linkedin&logoColor=white&link=https://linkedin.com/in/duhnunes/)](https://linkedin.com/in/duhnunes/)
-[![Rocketseat Badge](https://img.shields.io/badge/-duhnunes-9956f6?style=flat-square&labelColor=9956f6&logo=rocket&logoColor=white&link=https://app.rocketseat.com.br/me/duhnunes)](https://app.rocketseat.com.br/me/duhnunes)
-[![Codepen Badge](https://img.shields.io/badge/-duhnunes-262626?style=flat-square&labelColor=262626&logo=codepen&logoColor=white&link=https://codepen.io/DuH-Nunes)](https://codepen.io/DuH-Nunes)
+With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
 
-</p>
+## Resources
 
+Check out a few resources that may come in handy when working with NestJS:
+
+- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
+- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
+- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
+- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
+- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
+- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
+- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
+- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+
+## Support
+
+Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+
+## Stay in touch
+
+- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
+- Website - [https://nestjs.com](https://nestjs.com/)
+- Twitter - [@nestframework](https://twitter.com/nestframework)
+
+## License
+
+Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
