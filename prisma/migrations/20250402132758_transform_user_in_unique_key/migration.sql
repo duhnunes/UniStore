@@ -25,6 +25,9 @@ CREATE TABLE "product" (
 );
 
 -- CreateIndex
+CREATE UNIQUE INDEX "user_name_key" ON "user"("name");
+
+-- CreateIndex
 CREATE UNIQUE INDEX "user_email_key" ON "user"("email");
 
 -- AddForeignKey

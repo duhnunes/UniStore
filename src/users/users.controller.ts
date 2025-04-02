@@ -30,13 +30,19 @@ export class UsersController {
     return this.usersService.findByFilters({ email, name })
   }
 
-  @Patch(':id')
-  update(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto) {
-    return this.usersService.update(+id, updateUserDto)
+  @Get(':slug')
+  findSlug(@Param('slug') slug: string) {
+    return this.usersService.findUserBySlug(slug)
   }
 
-  @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.usersService.remove(+id)
+  @Patch(':id')
+  update(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto) {
+    console.log(`Update user ${id}: `, updateUserDto)
+    return this.usersService.update(id, updateUserDto)
+  }
+
+  @Delete(':slug')
+  remove(@Param('slug') slug: string) {
+    return this.usersService.remove(slug)
   }
 }

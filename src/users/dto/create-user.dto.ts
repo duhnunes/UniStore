@@ -12,6 +12,9 @@ export class CreateUserDto implements User {
   @IsString()
   name: string
 
+  @IsString()
+  slug: string
+
   @IsEmail()
   email: string
 
