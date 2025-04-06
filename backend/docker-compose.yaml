@@ -3,9 +3,10 @@ version: '3.7'
 services:
   pg:
     image: bitnami/postgresql:latest
+    container_name: unistore
     ports:
       - 5432:5432
     environment:
       - POSTGRES_USER=docker
       - POSTGRES_PASSWORD=docker
-      - POSTGRES_DB=products-crud
+      - POSTGRES_DB=unistore
